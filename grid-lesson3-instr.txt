@@ -60,3 +60,4 @@ git clone // копирование репозитория с gitHab
 git remove show origin // Посомтреть на каком удалённом репозитории подключены
 git log // Посмотреть все изминения 
 git push // Отправляем файлы на GitHab
+git push --set-upstream origin name_repozitorii
