@@ -61,3 +61,4 @@ git remove show origin // Посомтреть на каком удалённо�
 git log // Посмотреть все изминения 
 git push // Отправляем файлы на GitHab
 git push --set-upstream origin name_repozitorii
+git branc -d name_repozitorii// Удаляем ветку репозитория если не нужна уже
