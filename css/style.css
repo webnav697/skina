@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -181,9 +182,6 @@
     padding: 10px 10px;
     font-size: 14px;
   }
-}
-
-@media (max-width: 800px) {
   .intro__title {
     font-weight: bold;
     font-size: 30px;
@@ -383,5 +381,218 @@ body {
   width: 30px;
   height: 3px;
   margin-top: 5px;
+}
+
+.bg-grey-2 {
+  background-color: #f1f1f1;
+}
+
+.offer__block {
+  width: 85%;
+  margin: 0px auto auto;
+  padding: 40px 80px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2);
+  background: #fff url(../img/offer-01.png) no-repeat center right -50px;
+  font-family: proxima_novalight,sans-serif;
+  color: #262626;
+}
+
+.offer__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__group {
+  width: 33.33%;
+  margin-bottom: 20px;
+}
+
+.form__select, .form__input {
+  width: 100%;
+  height: 50px;
+  color: #6b6b6b;
+  border: 1px solid #ddd;
+  border-right: 0;
+}
+
+.form__select {
+  padding-left: 20px;
+}
+
+.form__input {
+  padding: 0 0 0 20px;
+}
+
+.form__input:last-child {
+  border: 1px solid #ddd;
+}
+
+.form .input_button {
+  background: #4285f4;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form__group-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+}
+
+.form__group-toggle .form__label {
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.form__group-toggle label::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  margin-right: 20px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.form__checkbox {
+  display: none;
+}
+
+.form__checkbox:checked + label::before {
+  content: '✔';
+  text-align: center;
+  line-height: 30px;
+  color: #4285f4;
+  font-size: 24px;
+  display: inline-block;
+}
+
+@media (max-width: 960px) {
+  .offer__block {
+    background: #fff url(../img/offer-01.png) no-repeat center right -70px;
+  }
+}
+
+@media (max-width: 800px) {
+  .offer__block {
+    width: 95%;
+    background: #fff url(../img/offer-01.png) no-repeat center right -120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer__block {
+    width: 95%;
+    background: #fff url(../img/offer-01.png) no-repeat center right -150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .offer__block {
+    width: 100%;
+    padding: 20px 40px;
+    background: #fff;
+  }
+  .form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form__group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .form__group-toggle {
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form__group-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (max-width: 480px) {
+  .offer__title {
+    font-size: 18px;
+    text-align: center;
+  }
+  .offer .form__group-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer .form__group-toggle {
+    width: 100%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+@media (max-width: 320px) {
+  .offer__title {
+    font-size: 15px;
+    text-align: left;
+  }
+  .offer__block {
+    padding: 20px 20px;
+    background: #fff;
+  }
+  .offer__block p {
+    font-size: 12px;
+    text-align: left;
+  }
+  .offer .form__group {
+    font-size: 12px;
+  }
+  .offer .form__select, .offer .form__input {
+    width: 100%;
+    height: 35px;
+    padding-left: 5px;
+  }
+  .offer .form__group-toggle {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

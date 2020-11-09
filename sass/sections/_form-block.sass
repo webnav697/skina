@@ -1,0 +1,147 @@
+.bg-grey-2
+	background-color: #f1f1f1
+.offer
+	//margin-top: -10px
+	//box-shadow: 0 5px 10px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.2)
+	//text-align: left
+
+	&__one
+		//background: #fff url(../img/offer-01.png) no-repeat center right
+		//background-size: auto
+		//background-size: contain
+	&__block
+		width: 85%
+		margin: 0px auto auto
+		padding: 40px 80px
+		box-shadow: 0 5px 10px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.2)
+		background: #fff url(../img/offer-01.png) no-repeat center right -50px
+		font-family: proxima_novalight,sans-serif
+		color:#262626
+	&__title
+		font-size: 24px
+		font-weight: 700
+		text-transform: uppercase
+.form
+	&__row
+		display: flex
+		align-items: center
+	&__group		
+		width: 33.33%
+		margin-bottom: 20px
+	&__select,&__input
+			width: 100%
+			height: 50px
+			color:#6b6b6b
+			border: 1px solid #ddd
+			border-right: 0
+	&__select
+			padding-left: 20px
+	&__input
+		padding: 0 0 0 20px
+		&:last-child
+			border: 1px solid #ddd
+	.input_button
+		background: $btn_colors
+		color:#fff
+		border: 0
+		cursor: pointer
+	&__label
+		display: block
+		margin-bottom: 10px
+	&__group-toggle
+		display: flex
+		align-items: center
+		width: auto
+		.form__label
+			display: block
+			margin-bottom: 10px
+			margin-right: 40px
+			padding: 0
+			vertical-align: middle
+		label::before
+			content: ''
+			width: 30px
+			height: 30px
+			border: 1px solid #ddd
+			margin-right: 20px
+			display: inline-block
+			text-align: center
+			vertical-align: middle
+	&__checkbox
+		display: none
+		&:checked + label::before 
+			content: '✔'
+			text-align: center
+			line-height: 30px
+			color: #4285f4
+			font-size: 24px
+			display: inline-block
+@media (max-width: 960px)
+	.offer
+		&__block
+			background: #fff url(../img/offer-01.png) no-repeat center right -70px
+
+@media (max-width: 800px)
+	.offer
+		&__block
+			width: 95%
+			background: #fff url(../img/offer-01.png) no-repeat center right -120px
+@media (max-width : 768px)
+	.offer
+		&__block
+			width: 95%
+			background: #fff url(../img/offer-01.png) no-repeat center right -150px
+@media (max-width : 600px)
+	.offer
+		&__block
+			width: 100%
+			padding: 20px 40px
+			background: #fff
+	.form
+		&__row
+			flex-direction: column
+			display: flex
+		&__group		
+			width: 100%
+			margin-bottom: 20px
+		&__group-toggle
+			width: 50%
+			justify-content: center
+		&__group-col
+			display: flex
+			flex-direction: row
+@media (max-width: 480px)
+	.offer
+		&__title
+			font-size: 18px
+			text-align: center
+		.form
+			&__group-col
+				display: flex
+				flex-direction: column
+			&__group-toggle
+				width: 100%
+				justify-content: left
+
+@media (max-width: 320px)
+	.offer
+		&__title
+			font-size: 15px
+			text-align: left
+		&__block
+			padding: 20px 20px
+			background: #fff
+			p
+				font-size: 12px
+				text-align: left			
+		.form
+			&__group	
+				font-size: 12px
+			&__select, 
+			&__input 
+				width: 100%
+				height: 35px
+				padding-left: 5px
+			&__group-toggle
+				width: 100%
+	
