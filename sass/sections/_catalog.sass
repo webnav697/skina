@@ -1,0 +1,134 @@
+.catalog
+	&__watch-block
+		padding-bottom: 40px
+		.link-watch
+			background-color: #4285f4
+			text-decoration: none
+			display: inline-block
+			margin: 30px 0
+			transition: .3s
+			font-size: 16px
+			&:hover
+				box-shadow: 0 5px 10px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.2);
+				background-color: #ffffff;
+				color: #4285f4
+				transition: .7s
+				
+	&__gallery
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		text-align: justify
+		justify-content: space-around
+	&__item
+		width: 48%
+		position: relative
+		box-shadow: 0 5px 10px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.2)
+		display: flex
+		max-height: 250px
+		min-height: 100px
+		margin-bottom: 20px
+		overflow: hidden
+		&:hover	.catalog__buttons-block
+			display: flex
+			flex-wrap: nowrap
+			position: absolute
+			bottom: 0px
+			right: 0
+			transition: .3s
+	&__tag
+		position: absolute
+		top: 25px
+		left: 15px
+		a 
+			font-size: 14px
+			+bold
+			color: #ffffff
+			text-decoration: none
+			background-color: #4285f4
+			padding: 10px
+			text-transform: uppercase
+			&:hover
+				color: #4285f4
+				background-color: #fff
+	&__buttons-block
+		display: flex
+		flex-wrap: nowrap
+		position: absolute
+		bottom: -50px
+		right: 0
+		transition: .3s
+		+bold
+		.link-buttons,
+		.fa
+			font-size: 14px
+			color: #ffffff
+			text-decoration: none
+			background-color: #4285f4
+			padding: 10px
+			text-transform: uppercase
+		.link-buttons
+			border-right: 1px solid #000
+		.link-buttons:hover,
+		.fa:hover
+			color: #4285f4
+			background-color: #fff
+
+@media (max-width : 1280px)
+	.catalog
+			&__item
+				max-height: 250px
+				min-height: 250px
+
+@media (max-width: 960px)
+	.section
+		padding: 0px 0
+		&__title
+			padding: 30px
+			font-size: 20px
+		.catalog
+			&__item
+					max-height: 200px
+					min-height: 200px
+@media (max-width: 600px)
+	.section
+		padding: 0px 0
+		&__title
+			padding: 20px
+			font-size: 20px 
+		.catalog
+			&__item
+				width: 90%
+				max-height: 250px
+				min-height: auto
+@media (max-width: 320px)
+	.section
+		padding: 0px 0
+		&__title
+			padding: 20px
+			font-size: 20px 
+	.catalog
+		&__buttons-block
+			justify-content: center
+			left: 0
+			right: 0
+			position: absolute
+		&__tag
+			position: absolute
+			top: 2px
+			left: 0
+			a
+				font-size: 12px
+				padding: 5px
+		.link-buttons,
+		.fa
+			font-size: 12px
+			padding: 5px
+			text-align: center
+@media (max-width: 254px)
+	.catalog
+		.link-buttons,
+		.fa,
+		&__tag a
+			font-size: 10px
+			padding: 5px
