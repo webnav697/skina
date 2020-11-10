@@ -1,0 +1,85 @@
+.section
+	&__list
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+	&__item
+		width: 33%
+		display: flex
+		flex-wrap: wrap
+		flex-direction: column
+		align-items: center
+		margin-bottom: 35px
+		min-height: 200px
+		.circle
+			height: 100px
+			width: 100px
+			display: flex
+			text-align: center
+			border: 3px solid $btn_colors
+			border-radius: 50%
+			text-align: center
+			background-color: #f1f1f1
+			color: $btn_colors
+			align-items: center
+			justify-content: center
+		.fa::before
+			font-size: 45px
+		.fa-pencil-ruler::before
+			content: '\f5ae'
+		.fa-award
+			content: '\f559'
+		.fa-book-open
+			content: '\f518'
+		.fa-calendar-alt
+			content: '\f073'
+		.fa-hotel
+			content: '\f594'
+		.fa-barcode
+			content: '\f02a'
+		.text
+			display: block
+			width: 165px
+			font-size: 18px
+			line-height: 1.3em
+			margin-top: 10px
+			font-weight: bold
+@media (max-width: 600px)
+	.section
+		&__item
+			width: 50%
+@media (max-width: 360px)
+	.section
+		&__list
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+		&__item
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			flex-direction: column
+			align-items: center
+			margin-bottom: 35px
+			min-height: 80px
+			.circle
+				height: 140px
+				width: 140px
+				display: flex
+				text-align: center
+				border: 3px solid $btn_colors
+				border-radius: 50%
+				text-align: center
+				background-color: #f1f1f1
+				color: $btn_colors
+				align-items: center
+				justify-content: center
+			.fa::before
+				font-size: 55px
+			.text
+				display: block
+				width: 165px
+				font-size: 16px
+				line-height: 1em
+				margin-top: 10px
+				font-weight: bold
