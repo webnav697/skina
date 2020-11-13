@@ -1,0 +1,113 @@
+.section
+	&__bottom-block
+		min-height: 320px
+		width: 100%
+.feedback
+	//overflow: hidden
+	&__list
+		display: flex
+		justify-content: space-between
+	&__item
+		width: 33%
+		position: relative
+		display: flex
+	&__text
+		position: relative
+		background: #fff
+		border-radius: 8px
+		padding: 30px 40px
+		margin: 0 10px
+		font-size: 14px
+		font-style: italic
+		line-height: 1.5em
+		box-shadow: 0 5px 10px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.2)
+		min-height: 50px
+		display: flex
+		width: 100%
+	&__arrow
+		position: absolute
+		font-size: 50px
+		bottom: -25px
+		left: 45%
+		color: #fff
+	&__quote::before,
+	&__quote::after
+		color: $btn_colors
+		font-size: 17px
+	&__quote::before
+		content: '“'
+		margin-right: 5px
+	&__quote::after
+		content: '”'
+		margin-left: 5px
+	&__center-text
+		display: flex
+		flex-direction: column
+		justify-content: center
+	&__info-user
+		display: flex
+		flex-direction: column
+		position: absolute
+		bottom: -151px
+		left: 0
+		right: 0
+	&__img	
+		i
+			text-align: center
+			width: 60px
+			height: 60px
+			line-height: 55px
+			font-size: 30px
+			margin: 50px 0 20px
+			background: #ddd
+			color: $btn_colors
+			border: 2px solid $btn_colors
+			border-radius: 100%
+	.circle
+		&__block
+			display: flex
+			justify-content: center
+			margin: 170px 0 0
+		&__item
+			width: 22px
+			height: 22px
+			display: block
+			margin: 5px
+			border-radius: 50%
+			background: #c0cee4		
+			border: 5px solid #ddd
+			list-style: none
+			cursor: pointer
+			&.active
+				border: 5px solid #ccc
+				background: #4285f4
+				width: 22px
+				height: 22px
+				display: block
+				margin: 5px
+				border-radius: 50%
+				list-style: none
+		
+@media (max-width: 680px)
+	.feedback
+		&__list
+			flex-direction: column
+			margin-top: -80px
+			margin-left: auto
+			margin-right: auto
+			width: 80%
+		&__arrow
+			left: 0
+			right: 0
+			position: absolute
+		&__item
+			width: 100%
+			position: relative
+			display: flex
+			margin: 80px auto 90px auto
+			justify-content: center
+		&__text
+@media (max-width: 480px)
+	.feedback
+		&__list
+			width: 95%

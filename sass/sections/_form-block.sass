@@ -2,26 +2,28 @@
 	background-color: #f1f1f1
 	padding-bottom: 80px 
 .offer
-	//margin-top: -10px
-	//box-shadow: 0 5px 10px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.2)
-	//text-align: left
-
 	&__one
-		//background: #fff url(../img/offer-01.png) no-repeat center right
-		//background-size: auto
-		//background-size: contain
-	&__block
+		position: relative
+	&__block,
+	&__block-2
 		width: 85%
 		margin: 0px auto auto
 		padding: 40px 80px
 		box-shadow: 0 5px 10px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.2)
-		background: #fff url(../img/offer-01.png) no-repeat center right -50px
 		font-family: proxima_novalight,sans-serif
 		color:#262626
+	&__block
+		background: #fff url(../img/offer-01.png) no-repeat center right -50px
+	&__block-2
+		background: #fff url(../img/offer-02.png) no-repeat center right -50px
+		position: relative
+		top: -160px
 	&__title
 		font-size: 24px
 		font-weight: 700
 		text-transform: uppercase
+	&__sub-title
+		max-width: 560px
 .form
 	&__row
 		display: flex
@@ -35,6 +37,10 @@
 			color:#6b6b6b
 			border: 1px solid #ddd
 			border-right: 0
+	&__small-text
+		font-size: 12px
+		margin-left: 10px
+		display: block
 	&__select
 			padding-left: 20px
 	&__input
@@ -46,6 +52,7 @@
 		color:#fff
 		border: 0
 		cursor: pointer
+		padding: 0
 	&__label
 		display: block
 		margin-bottom: 10px
@@ -75,27 +82,45 @@
 			content: '✔'
 			text-align: center
 			line-height: 30px
-			color: #4285f4
+			color: $btn_colors
 			font-size: 24px
 			display: inline-block
+
+@media (max-width: 1024px)
+	.offer
+		&__sub-title 
+			max-width: 512px
+			font-size: 14px
 @media (max-width: 960px)
 	.offer
 		&__block
 			background: #fff url(../img/offer-01.png) no-repeat center right -70px
+		&__block-2
+			background: #fff url(../img/offer-02.png) no-repeat center right -90px
 
 @media (max-width: 800px)
 	.offer
 		&__block
 			width: 95%
 			background: #fff url(../img/offer-01.png) no-repeat center right -120px
+		&__block-2
+			width: 95%
+			background: #fff url(../img/offer-02.png) no-repeat center right -120px
+		&__sub-title
+			max-width: 410px
+			font-size: 14px
 @media (max-width : 768px)
 	.offer
 		&__block
 			width: 95%
 			background: #fff url(../img/offer-01.png) no-repeat center right -150px
+		&__block-2
+			width: 95%
+			background: #fff url(../img/offer-02.png) no-repeat center right -150px
 @media (max-width : 600px)
 	.offer
-		&__block
+		&__block,
+		&__block-2
 			width: 100%
 			padding: 20px 40px
 			background: #fff
@@ -130,7 +155,8 @@
 		&__title
 			font-size: 15px
 			text-align: left
-		&__block
+		&__block,
+		&__block-2
 			padding: 20px 20px
 			background: #fff
 			p
