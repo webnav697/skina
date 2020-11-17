@@ -55,6 +55,11 @@ body {
   background-color: #fff;
 }
 
+.btn:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .logo__text {
   color: #262626;
   font-family: 'Proxima Nova Semibold',sans-serif;
@@ -1634,6 +1639,40 @@ body {
 @media (max-width: 480px) {
   .feedback__list {
     width: 95%;
+  }
+}
+
+.section__production {
+  margin-top: -140px;
+}
+
+.production__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.production__info {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .production__info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-left: 0px;
+    font-size: 20px;
+  }
+  .production__img {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
